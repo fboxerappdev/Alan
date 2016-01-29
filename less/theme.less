@@ -1,0 +1,130 @@
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+//
+// Load core variables and mixins
+// --------------------------------------------------
+
+@import "variables.less";
+@import "mixins.less";
+
+
+
+* {
+  outline: none !important;
+}
+body {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  overflow-x: hidden ;
+  font-family: "Lora",arial;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+header{
+  background: #fff none repeat scroll 0 0;
+  clear: both;
+  padding: 14px 0;
+  .logo{
+    float: left;
+    margin-right: 15px;
+    img{
+      max-width: 100%;
+    }
+  }
+}
+.navbar
+{
+  border: 0 none;
+  float: left;
+  margin: 0;
+  padding: 5px 0;
+  .navbar-header
+  {
+    color:red;
+    a.navbar-brand{
+       display:none;
+     }
+  }
+  .mail-ul
+  {
+    color:red;
+    li{
+      color:red;
+      a{
+        color: #0f3866;
+        font-size: 17px;
+        padding:14px 15px;
+        text-transform: capitalize;
+        .transition(0.3s);
+        &:hover{
+          background:#0E3964;
+          color:#fff;
+        }
+      }
+    }
+  }
+}
+
+.slide-area
+{
+  clear: both;
+  position: relative;
+  &>img
+  {
+    width: 100%;
+  }
+  .slide-info
+  {
+    background: transparent none repeat scroll 0 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    h2{
+      color: #fff;
+      font-size: 45px;
+      line-height: 1.3;
+    }
+    a{
+      background: rgba(255, 255, 255, 0.3) url("../images/icons/play.png") no-repeat scroll 20px center;
+      border-radius: 4px;
+      color: #fff;
+      display: inline-block;
+      font-family: arial;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 12px;
+      padding: 13px 27px 13px 48px;
+      text-transform: uppercase;
+    }
+  }
+}
+.vt-center
+{
+  align-self: center;
+  display: table;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 20px;
+  width: 100%;
+}
