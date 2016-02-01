@@ -128,4 +128,16 @@ header .logo img {
   padding: 0 20px;
   width: 100%;
 }
+.header-contact {
+  color: red;
+}
+.header-contact i {
+  color: green;
+}
+.header-contact span {
+  color: blue;
+}
+.header-contact p {
+  color: red;
+}
 /*# sourceMappingURL=bootstrap-theme.css.map */

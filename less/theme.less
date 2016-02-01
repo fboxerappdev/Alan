@@ -128,3 +128,124 @@ header{
   padding: 0 20px;
   width: 100%;
 }
+
+.header-contact
+{
+  float: right;
+  i{
+    background: #ededed none repeat scroll 0 0;
+    border-radius: 40px;
+    float: left;
+    font-size: 22px;
+    height: 44px;
+    margin-right: 14px;
+    margin-top: 2px;
+    padding: 11px 10px;
+    text-align: center;
+    width: 44px;
+  }
+  span {
+    font-size: 28px;
+  }
+  p{
+    font-style: italic;
+    margin-bottom: 0;
+    margin-top: -8px;
+    padding-right: 12px;
+    text-align: right;
+  }
+}
+.down-form
+{
+  background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+  bottom: 0;
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  h4{
+    color: #fff;
+    font-family: Open Sans;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+  form{
+    &:extend(.block);
+    .form-group{
+      input{
+        box-shadow: 0 0 0;
+        font-family: open sans;
+        font-size: 18px;
+        font-weight: 600;
+        height: 50px;
+        padding: 12px;
+        text-transform: uppercase;
+      }
+      &>input:focus{
+        box-shadow: 0 0 0;
+        border:none;
+      }
+    }
+    button{
+      background: #b5a583 none repeat scroll 0 0;
+      border: medium none;
+      color: #fff;
+      font-family: open sans;
+      font-size: 17px;
+      font-weight: 600;
+      padding: 13px 10px;
+      text-transform: uppercase;
+      width: 161px;
+      .transition(0.3s);
+      i{
+        margin-right:5px;
+      }
+      &:hover,&:focus{
+        background:#857553;
+        color:#fff;
+      }
+    }
+  }
+}
+.logo-section{
+  &:extend(.block);
+  background: #f7f6f2 none repeat scroll 0 0;
+  padding: 36px 0;
+  text-align: center;
+  span{
+    display: inline-block;
+    font-family: open sans;
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+  img{
+    max-width: 100%;
+  }
+}
+.head-2
+{
+  font-family: open sans;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 70px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.blk{
+  color: #454545;
+}
+.about-section
+{
+  clear: both;
+  padding: 60px 0 100px;
+  span{
+    color: #535353;
+    font-size: 32px;
+  }
+  p{
+    color: #6f6f6f;
+    font-size: 18px;
+    line-height: 1.58;
+    margin-bottom: 16px;
+  }
+}
