@@ -48,7 +48,7 @@ ul {
 header {
   background: #fff none repeat scroll 0 0;
   clear: both;
-  padding: 14px 0;
+  padding: 14px 12px;
 }
 header .logo {
   float: left;
@@ -62,12 +62,6 @@ header .logo img {
   float: left;
   margin: 0;
   padding: 5px 0;
-}
-.navbar .navbar-header {
-  color: red;
-}
-.navbar .navbar-header a.navbar-brand {
-  display: none;
 }
 .navbar .mail-ul {
   color: red;
@@ -92,12 +86,20 @@ header .logo img {
   background: #0E3964;
   color: #fff;
 }
-.slide-area {
-  clear: both;
-  position: relative;
+.nav-toggle {
+  background: transparent url("../images/icons/bar.png") no-repeat scroll 0 center / 100% auto;
+  float: right;
+  height: 31px;
+  margin-left: 24px;
+  margin-top: 12px;
+  width: 42px;
+  display: none;
 }
-.slide-area > img {
-  width: 100%;
+.slide-area {
+  background: #EDEDED url("../images/slide.jpg") repeat scroll 0 0 / cover;
+  clear: both;
+  height: 1100px;
+  position: relative;
 }
 .slide-area .slide-info {
   background: transparent none repeat scroll 0 0;
@@ -171,7 +173,8 @@ header .logo img {
   margin-bottom: 16px;
   text-transform: uppercase;
 }
-.down-form form .form-group input {
+.down-form form .form-group input,
+.sinup-block input {
   box-shadow: 0 0 0;
   font-family: open sans;
   font-size: 18px;
@@ -367,7 +370,9 @@ header .logo img {
   margin-top: 12px;
 }
 .el-wiz .el-wiz-info1 a,
-.speak-bloglist > a {
+.speak-bloglist > a,
+.yellow-box a.btn-a,
+.blog-box a.btn-a {
   background: #b5a583 none repeat scroll 0 0;
   border-radius: 10px;
   color: #fff;
@@ -507,15 +512,695 @@ header .logo img {
   margin-top: 34px;
   padding: 8px 18px;
 }
-.speak-bloglist > a {
+.speak-bloglist > a,
+.yellow-box a.btn-a,
+.blog-box a.btn-a {
   border-radius: 4px;
   margin: 85px auto 0;
   padding: 10px 22px;
 }
 .private-cg {
-  background: red url("../images/info1.jpg") no-repeat scroll 0 0 / cover;
+  background: transparent url("../images/info1.jpg") no-repeat scroll 0 0 / cover;
 }
-.info-box {
-  color: blue;
+.info-box .heading3 {
+  margin: 152px auto -76px;
+}
+.info-box .heading3 span {
+  color: #fff;
+}
+.info-box .heading3 h3 {
+  background: #fff none repeat scroll 0 0;
+  color: #444444;
+  border: medium none;
+  margin: -2px;
+}
+.yellow-box {
+  background: #eeeeee none repeat scroll 0 0;
+  padding: 110px 0;
+  text-align: center;
+}
+.ybox {
+  float: left;
+  width: 50%;
+}
+.ybox-1 {
+  background: #b5a583;
+  height: 500px;
+  padding-top: 60px;
+  margin: 10px 20px;
+}
+.ybox-1 h2 {
+  background: #fff none repeat scroll 0 0;
+  color: #b5a583;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 12px 15px;
+}
+.ybox-1 h1 {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: bold;
+  font-family: "open sans";
+}
+.ybox-1 p {
+  color: #f4f1ec;
+  font-size: 17px;
+  line-height: 28px;
+  margin: 20px 50px 40px;
+}
+.ybox-1 a {
+  border: 2px solid #c3b69a;
+  border-radius: 7px;
+  color: #ffffff;
+  font-family: open sans;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+  padding: 12px 40px;
+}
+.git-block {
+  padding: 70px 0;
+  background: transparent url("../images/form-bg.jpg") no-repeat scroll right 0 / cover;
+}
+.git-block .row {
+  position: relative;
+}
+.git-block .buttonBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.git-info {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.git-info p {
+  border-left: 1px solid #9b9b9b;
+  color: #efefef;
+  font-size: 25px;
+  padding-left: 20px;
+}
+.git-info h3 {
+  color: #fff;
+  float: right;
+}
+.git-form {
+  background: #fff none repeat scroll 0 0 padding-box content-box;
+  margin: 40px 0;
+  padding-right: 40px;
+}
+.git-form h4 {
+  color: #444444;
+  display: inline-block;
+  font-family: open sans;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 46px 20px 2px;
+  padding-left: 22px;
+  text-align: center;
+}
+.git-form form {
+  padding: 40px;
+}
+.git-form input,
+.git-form select {
+  background: #eeeeee none repeat scroll 0 0;
+  border: 1px solid #cbcbcb;
+  border-radius: 6px;
+  box-shadow: 0 0 0;
+  font-family: arial;
+  font-size: 15px;
+  height: 52px;
+  margin-bottom: 18px;
+}
+.git-form select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  background: #eeeeee url("../images/icons/down-arrow.png") no-repeat scroll right center content-box border-box;
+}
+.git-form span {
+  color: #909090;
+  display: inline-block;
+  font-family: open sans;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: -8px;
+  padding-left: 9px;
+  width: 100%;
+}
+.git-form button {
+  background: #b5a583 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 5px;
+  color: #fff;
+  float: right;
+  font-family: open sans;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 11px 25px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.blog-box {
+  padding: 110px 0;
+}
+.blog-box h3 {
+  font-family: open sans;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #444444;
+}
+.blog-box h1 {
+  font-family: open sans;
+  font-size: 44px;
+  font-weight: bolder;
+  margin-bottom: 70px;
+  text-align: center;
+  margin-top: 0px;
+  color: #444444;
+}
+.blog-box a.btn-a {
+  marign: 0 auto;
+  display: table;
+}
+.blocks {
+  display: table;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 10px 0;
+}
+.blocks .block-item {
+  padding: 15px 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.blocks .block-item:hover {
+  background: #F8F6F3 none repeat scroll 0 0;
+}
+.blocks .block-item h5 {
+  color: #999;
+  font-size: 19px;
+  font-style: italic;
+}
+.blocks .block-item img {
+  margin-bottom: 13px;
+  width: 100%;
+}
+.blocks .block-item p {
+  color: #444444;
+  font-family: open sans;
+  font-size: 17px;
+  font-weight: bold;
+}
+.blocks .block-item a {
+  color: #b5a583;
+  font-family: open sans;
+  font-size: 17px;
+  font-weight: bold;
+}
+.sinup-block {
+  background: #b5a583;
+  padding: 30px 0;
+}
+.sinup-block h4 {
+  color: #fff;
+  display: inline-block;
+  font-family: open sans;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  margin-left: 6px;
+}
+.sinup-block button {
+  background: #a39476 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 6px;
+  color: #fff;
+  font-family: open sans;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 40px;
+}
+.footer-block {
+  margin: 50px 0;
+}
+.footer-block img {
+  color: red;
+}
+.footer-block h6 {
+  color: #444444;
+  font-family: open sans;
+  font-size: 13px;
+  margin-top: 19px;
+}
+.footer-block .social-icons {
+  float: right;
+}
+.footer-block .social-icons a {
+  margin-right: 8px;
+}
+@media only screen and (min-width: 0px) and (max-width: 1080px) {
+  .navbar {
+    display: none;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .navbar .mail-ul li a {
+    padding: 14px 12px;
+  }
+  .slide-area .slide-info h2 {
+    font-size: 30px;
+  }
+  .down-form form button {
+    width: 100%;
+  }
+  .down-form form button i {
+    display: inline-block;
+  }
+  .info-box .heading3 {
+    margin: 62px auto -62px;
+  }
+  .info-box .heading3 h3 {
+    font-size: 28px;
+  }
+  .ybox {
+    width: 100%;
+  }
+  .head-2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .about-section span {
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+  }
+  .about-section p {
+    font-size: 16px;
+  }
+  .testimonial-section h2 {
+    font-size: 26px;
+    margin-bottom: 21px;
+  }
+  .testimonial-section p {
+    font-size: 17px;
+    padding: 0 10px;
+  }
+  .el-wiz .el-wiz-info span {
+    font-size: 21px;
+  }
+  .video-section .video-item {
+    height: 230px;
+    margin-bottom: 20px;
+  }
+  .el-wiz-list {
+    margin: 0 -20px;
+  }
+  .our-info p {
+    font-size: 21px;
+    padding-left: 0;
+  }
+  .heading3 span {
+    font-size: 35px;
+  }
+  .heading3 h3 {
+    font-size: 37px;
+  }
+  .heading3 img {
+    width: 140px;
+  }
+  .speak-bloglist .speak-blogitem img {
+    float: left;
+    margin: 27px 10px 30px 20px;
+    width: 100px;
+  }
+  .speak-bloglist .speak-blogitem h3 {
+    font-size: 20px;
+    text-align: left;
+  }
+  .speak-bloglist .speak-blogitem p {
+    font-size: 15px;
+    text-align: left;
+  }
+  .speak-bloglist .speak-blogitem a {
+    display: none;
+  }
+  .speak-bloglist .speak-blogitem {
+    margin-bottom: 12px;
+    min-height: inherit;
+    width: 100%;
+  }
+  .git-info p {
+    font-size: 20px;
+  }
+  .sinup-block button {
+    padding: 14px 32px;
+  }
+  .slide-area {
+    height: 900px;
+    background-position: -340px 0;
+  }
+  .about-section p {
+    display: none;
+  }
+  .el-wiz-list {
+    display: none;
+  }
+  .ybox-1 h1 {
+    font-size: 23px;
+  }
+  .ybox-1 {
+    height: inherit;
+    padding: 20px;
+    text-align: left;
+  }
+  .ybox-1 p {
+    margin: 20px 0 17px;
+  }
+  .ybox-1 a {
+    display: none;
+  }
+  .git-form {
+    margin: -40px 0;
+    padding-right: 0;
+  }
+  .git-info {
+    display: none;
+  }
+  .speak-bloglist > a,
+  .yellow-box a.btn-a,
+  .blog-box a.btn-a,
+  .yellow-box a.btn-a,
+  .blog-box a.btn-a {
+    margin: 45px auto 0;
+  }
+  .yellow-box {
+    padding: 60px 0;
+  }
+  .blog-box h3,
+  .blog-box h1 {
+    text-align: left;
+  }
+  .blog-box h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  header .logo img {
+    width: 180px;
+  }
+  .header-contact i {
+    font-size: 19px;
+    height: 38px;
+    width: 37px;
+  }
+  .header-contact span {
+    font-size: 21px;
+  }
+  .header-contact p {
+    font-size: 12px;
+    padding-right: 0;
+  }
+  .nav-toggle {
+    background-size: auto 100%;
+    height: 22px;
+    margin-left: 20px;
+    margin-top: 8px;
+    width: 25px;
+  }
+  .down-form form .form-group input,
+  .down-form h4,
+  .sinup-block input {
+    display: none;
+  }
+  .sinup-block input {
+    display: inline-block;
+  }
+  .blog-box {
+    padding: 70px 0;
+  }
+  .footer-block {
+    text-align: center;
+  }
+  .footer-block .social-icons {
+    display: inline-block;
+    float: none;
+    margin-top: 16px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  header {
+    padding: 14px 0;
+  }
+  header .logo img {
+    width: 150px;
+  }
+  .header-contact {
+    display: none;
+  }
+  .slide-area {
+    background-position: -200px 0;
+    height: 580px;
+  }
+  .slide-area .slide-info h2 {
+    font-size: 19px;
+  }
+  .about-section {
+    padding: 20px 0 40px;
+  }
+  .about-section span {
+    font-size: 18px;
+  }
+  .head-2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .el-wiz img {
+    clear: both;
+    max-width: 100%;
+    padding: 23px 0 14px;
+  }
+  .el-wiz .el-wiz-info {
+    padding: 30px 0;
+  }
+  .heading3 h3,
+  .heading3 span {
+    font-size: 30px;
+  }
+  .ybox-1 {
+    margin: 0 0 16px;
+  }
+  .ybox-1 h1 {
+    font-size: 20px;
+  }
+  .git-form h4 {
+    font-size: 35px;
+    margin: 26px 0 2px;
+  }
+  .git-form form {
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .mail-ul li a {
+    padding: 14px 12px;
+  }
+  .slide-area .slide-info h2 {
+    font-size: 30px;
+  }
+  .down-form form button {
+    width: 200px;
+  }
+  .down-form form button i {
+    display: inline-block;
+  }
+  .head-2 {
+    font-size: 42px;
+  }
+  .about-section span {
+    font-size: 28px;
+  }
+  .about-section p {
+    font-size: 16px;
+  }
+  .testimonial-section h2 {
+    font-size: 30px;
+  }
+  .testimonial-section p {
+    font-size: 19px;
+  }
+  .el-wiz .el-wiz-info span {
+    font-size: 29px;
+  }
+  .video-section .video-item {
+    height: 230px;
+  }
+  .el-wiz-list {
+    margin: 0 -20px;
+  }
+  .our-info p {
+    padding-left: 90px;
+  }
+  .speak-bloglist .speak-blogitem img {
+    width: 100px;
+  }
+  .speak-bloglist .speak-blogitem h3 {
+    font-size: 23px;
+  }
+  .speak-bloglist .speak-blogitem p {
+    font-size: 15px;
+  }
+  .speak-bloglist .speak-blogitem {
+    min-height: 430px;
+  }
+  .git-info p {
+    font-size: 20px;
+  }
+  .sinup-block button {
+    padding: 14px 32px;
+  }
+  .slide-area {
+    height: 900px;
+  }
+  .about-section p {
+    display: none;
+  }
+  .el-wiz-list {
+    display: none;
+  }
+  .ybox-1 h1 {
+    font-size: 23px;
+  }
+  .ybox-1 {
+    height: 560px;
+  }
+  .git-info {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .down-form form button {
+    width: 135px;
+  }
+  .down-form form button i {
+    display: none;
+  }
+  .slide-area .slide-info h2 {
+    font-size: 38px;
+  }
+  .about-section p {
+    display: block;
+  }
+  .video-section .video-item {
+    height: 320px;
+  }
+  .testimonial-section h2 {
+    font-size: 40px;
+  }
+  .testimonial-section p {
+    font-size: 23px;
+  }
+  .el-wiz-list {
+    display: inline-block;
+  }
+  .ybox-1 h1 {
+    font-size: 34px;
+  }
+  .ybox-1 {
+    height: 500px;
+  }
+  .git-info {
+    display: inline-block;
+  }
+}
+@media (min-width: 1200px) {
+  .blocks .block-item {
+    padding: 15px 10px;
+  }
+  .navbar .mail-ul li a {
+    padding: 14px 15px;
+  }
+  .slide-area .slide-info h2 {
+    font-size: 45px;
+  }
+  .down-form form button {
+    width: 161px;
+  }
+  .down-form form button i {
+    display: inline-block;
+  }
+  .head-2 {
+    font-size: 48px;
+  }
+  .about-section span {
+    font-size: 32px;
+  }
+  .about-section p {
+    font-size: 18px;
+  }
+  .testimonial-section h2 {
+    font-size: 50px;
+  }
+  .testimonial-section p {
+    font-size: 29px;
+  }
+  .el-wiz .el-wiz-info span {
+    font-size: 32px;
+  }
+  .video-section .video-item {
+    height: 370px;
+  }
+  .el-wiz-list {
+    margin: 0 -60px;
+  }
+  .our-info p {
+    padding-left: 293px;
+  }
+  .speak-bloglist .speak-blogitem img {
+    width: 120px;
+  }
+  .speak-bloglist .speak-blogitem h3 {
+    font-size: 29px;
+  }
+  .speak-bloglist .speak-blogitem p {
+    font-size: 17px;
+  }
+  .speak-bloglist .speak-blogitem {
+    min-height: 470px;
+  }
+  .git-info p {
+    font-size: 25px;
+  }
+  .sinup-block button {
+    padding: 14px 40px;
+  }
+  .slide-area {
+    height: 900px;
+  }
+}
+@media (min-width: 1400px) {
+  .slide-area {
+    height: 1040px;
+  }
+}
+@media (min-width: 1600px) {
+  .blocks .block-item {
+    padding: 15px 20px;
+  }
+  .slide-area {
+    height: 1100px;
+  }
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */

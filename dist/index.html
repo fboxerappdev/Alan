@@ -40,22 +40,16 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="row">
+      <div class="container-fluid">
           <div class="logo">
             <img src="images/logo.png">
           </div>
+          <div class="nav-toggle">
+
+          </div>
           <nav class="navbar">
-            <div class="container-fluid">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                </button>
-                <a class="navbar-brand" href="#">Brand</a>
-              </div>
               <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div class="navbar-collapse">
                 <ul class="nav navbar-nav mail-ul">
                   <li class="active"><a href="#">About alan</a></li>
                   <li><a href="#">electricityWizard</a></li>
@@ -63,7 +57,6 @@
                   <li><a href="#">contact</a></li>
                 </ul>
               </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
           </nav>
           <div class="header-contact">
             <i class="fa fa-phone"></i>
@@ -71,10 +64,8 @@
             <p>Or request a call back</p>
           </div>
          </div>
-       </div>
       </header>
       <div class="slide-area">
-        <img src="images/slide.jpg">
         <div class="slide-info">
            <div class="vt-center">
              <h2>
@@ -91,13 +82,13 @@
                 <h4>Download free whitepaper</h4>
               </div>
               <form>
-                <div class="form-group col-md-5">
+                <div class="form-group col-md-5 col-sm-6">
                   <input type="text" class="form-control" placeholder="FULL NAME">
                 </div>
-                <div class="form-group col-md-5">
-                  <input type="email" class="form-control" placeholder="Email ADDRESS">
+                <div class="form-group col-md-5 col-sm-6">
+                  <input type="email" class="form-control" placeholder="Email ADDRESS" required>
                 </div>
-                <div class="form-group col-md-2">
+                <div class="form-group col-md-2 col-md-3">
                   <button type="submit" class="btn btn-default"><i class="fa fa-download"></i> Download</button>
                 </div>
               </form>
@@ -113,13 +104,13 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-sm-4">
               <img src="images/logos/logo1.jpg">
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4">
               <img src="images/logos/logo2.jpg">
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4">
               <img src="images/logos/logo3.jpg">
             </div>
           </div>
@@ -147,12 +138,12 @@
       <div class="video-section">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-sm-6">
               <div class="video-item">
 
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6">
               <div class="video-item">
 
               </div>
@@ -271,91 +262,122 @@
         <div class="container">
           <div class="info-box">
             <div class="heading3">
-              <span>Speaking</span>
-              <h3>engagements</h3>
+              <span>Exclusive</span>
+              <h3>PRIVATE CONSULTING</h3>
               <img src="images/logo.png">
-              <i>by</i>
+              <i>with</i>
             </div>
-            <ul class="private-cg-list">
-              <li>
-              text
-              </li>
-            </ul>
           </div>
         </div>
       </div>
       <div class="yellow-box">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="ybox-1">
-                <h2>Month-by-month</h2>
-                <h1>MONTHLY COACHING</h1>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-                <a>LEARN MORE</a>
-              </div>
+          <div class="ybox">
+            <div class="ybox-1">
+              <h2>Month-by-month</h2>
+              <h1>MONTHLY COACHING</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+              <a>LEARN MORE</a>
             </div>
-            <div class="col-md-6">
-              <div class="ybox-1">
-                <h2>Application only</h2>
-                <h1>ANNUAL MENTORSHIP PROGRAM</h1>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-                <a>LEARN MORE</a>
-              </div>
-            </div>
-            <a href="#" class="btn-a">INTERSTED? CLICK HERE</a>
           </div>
+          <div class="ybox">
+            <div class="ybox-1">
+              <h2>Application only</h2>
+              <h1>ANNUAL MENTORSHIP PROGRAM</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+              <a>LEARN MORE</a>
+            </div>
+          </div>
+          <a href="#" class="btn-a">INTERSTED? CLICK HERE</a>
         </div>
       </div>
     <div class="git-block">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <div class="row">
-
+          <div class="col-md-6 col-sm-8">
+            <div class="git-form">
+              <h4>Get in touch</h4>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" placeholder="FIRST NAME">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" placeholder="LAST NAME">
+                  </div>
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" placeholder="PHONE NUMBER">
+                  </div>
+                  <div class="col-sm-12">
+                    <input type="email" class="form-control" placeholder="EMAIL ADDRESS">
+                  </div>
+                  <div class="col-sm-12">
+                    <span>I'D LIKE TO FIND OUT ABOUT</span>
+                  </div>
+                  <div class="col-sm-12">
+                    <select class="form-control">
+                      <option>SELECT</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-12">
+                    <button>Submit</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-            <div class="col-md-6">
-              <div class="git-info">
-                <p>“Business is a game played by those daring enough to confront their deepest fears in the pursuit of discovering and expressing their life’s work. It is a game limited only by ones imagination and emotional mastery.”</p>
-                <h3>— Alan Belkin</h3>
-              </div>
+          <div class="col-md-6 col-sm-12 buttonBox">
+            <div class="git-info">
+              <p>“Business is a game played by those daring enough to confront their deepest fears in the pursuit of discovering and expressing their life’s work. It is a game limited only by ones imagination and emotional mastery.”</p>
+              <h3>— Alan Belkin</h3>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="blog-box">
-      <div class="container">
+      <div class="container-fluid">
         <h3>AlanBelkin.com Blog</h3>
         <h1>Conversations that inspire action</h1>
         <div class="blocks">
-        <div class="row">
-          <div class="col-md-3">
-            <h5>October 30,2015</h5>
-            <img src="images/block1.jpg">
-            <p>MOLLIS TRISTIQUE IPSUM BLATA GORQU QUISI FACILI LO DOLOR SIT</p>
-            <a href="#">READ MORE</a>
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="block-item">
+                <h5>October 30,2015</h5>
+                <img src="images/block1.jpg">
+                <p>MOLLIS TRISTIQUE IPSUM BLATA GORQU QUISI FACILI LO DOLOR SIT</p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="block-item">
+                <h5>October 30,2015</h5>
+                <img src="images/block1.jpg">
+                <p>MOLLIS TRISTIQUE IPSUM BLATA GORQU QUISI FACILI LO DOLOR SIT</p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="block-item">
+                <h5>October 30,2015</h5>
+                <img src="images/block1.jpg">
+                <p>MOLLIS TRISTIQUE IPSUM BLATA GORQU QUISI FACILI LO DOLOR SIT</p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="block-item">
+                <h5>October 30,2015</h5>
+                <img src="images/block1.jpg">
+                <p>MOLLIS TRISTIQUE IPSUM BLATA GORQU QUISI FACILI LO DOLOR SIT</p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
           </div>
-          <div class="col-md-3">
-            <h5>October 30,2015</h5>
-            <img src="images/block1.jpg">
-            <p>MOLLIS TRISTIQUE IPSUM BLATA GORQU QUISI FACILI LO DOLOR SIT</p>
-            <a href="#">READ MORE</a>
-          </div>
-          <div class="col-md-3">
-            <h5>October 30,2015</h5>
-            <img src="images/block1.jpg">
-            <p>MOLLIS TRISTIQUE IPSUM BLATA GORQU QUISI FACILI LO DOLOR SIT</p>
-            <a href="#">READ MORE</a>
-          </div>
-          <div class="col-md-3">
-            <h5>October 30,2015</h5>
-            <img src="images/block1.jpg">
-            <p>MOLLIS TRISTIQUE IPSUM BLATA GORQU QUISI FACILI LO DOLOR SIT</p>
-            <a href="#">READ MORE</a>
-          </div>
-        </div>
         </div>
         <a href="#" class="btn-a">LATESTS NEWS AT MY BLOG</a>
       </div>
@@ -363,11 +385,20 @@
     <div class="sinup-block">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <p>GET FREE VIDEO’S, TRAINING & INSIGHTS WEEKLY (NO SPAM)</p>
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-
+          <div class="col-md-12">
+            <h4>GET FREE VIDEO'S, TRAINING & INSIGHTS WEEKLY (NO SPAM)</h4>
           </div>
+          <form>
+            <div class="form-group col-md-5">
+              <input type="text" class="form-control" placeholder="FULL NAME">
+            </div>
+            <div class="form-group col-md-5">
+              <input type="email" class="form-control" placeholder="Email ADDRESS">
+            </div>
+            <div class="form-group col-md-2">
+              <button type="submit">SING UP</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -376,15 +407,19 @@
         <div class="row">
           <div class="col-md-6">
            <img src="images/logo.png">
-            <h6>2016 © COPYRIGHT · ALANBELKIN.COM.AU</h6>
+           <h6>2016 © COPYRIGHT · ALANBELKIN.COM.AU</h6>
+          </div>
+          <div class="col-md-6">
+            <div class="social-icons">
+              <a href="#"><img src="images/icons/fb.jpg"></a>
+              <a href="#"><img src="images/icons/tw.jpg"></a>
+              <a href="#"><img src="images/icons/yt.jpg"></a>
+              <a href="#"><img src="images/icons/in.jpg"></a>
+              <a href="#"><img src="images/icons/can.jpg"></a>
             </div>
-            <div class="col-md-6">
-            </div>
+          </div>
       </div>
     </div>
-
-
-
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
