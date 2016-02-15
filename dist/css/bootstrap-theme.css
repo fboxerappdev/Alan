@@ -10,7 +10,10 @@
 .down-form form,
 .logo-section,
 .brown-box,
-.video-section {
+.video-section,
+.mobi-menu-header,
+.mobi-menu-list,
+.social-icons-header {
   width: 100%;
   float: left;
 }
@@ -94,6 +97,7 @@ header .logo img {
   margin-top: 12px;
   width: 42px;
   display: none;
+  cursor: pointer;
 }
 .slide-area {
   background: #EDEDED url("../images/slide.jpg") repeat scroll 0 0 / cover;
@@ -134,10 +138,12 @@ header .logo img {
   padding: 0 20px;
   width: 100%;
 }
-.header-contact {
+.header-contact,
+.header-contact-mobi {
   float: right;
 }
-.header-contact i {
+.header-contact i,
+.header-contact-mobi i {
   background: #ededed none repeat scroll 0 0;
   border-radius: 40px;
   float: left;
@@ -149,10 +155,12 @@ header .logo img {
   text-align: center;
   width: 44px;
 }
-.header-contact span {
+.header-contact span,
+.header-contact-mobi span {
   font-size: 28px;
 }
-.header-contact p {
+.header-contact p,
+.header-contact-mobi p {
   font-style: italic;
   margin-bottom: 0;
   margin-top: -8px;
@@ -273,6 +281,27 @@ header .logo img {
   top: 40%;
   cursor: pointer;
   width: 56px;
+}
+.nav-mobile {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 7px 0 #c0c0c0;
+  height: 100%;
+  padding: 10px 0;
+  position: fixed;
+  right: -360px;
+  top: 0;
+  width: 350px;
+  z-index: 999;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.nav-open {
+  right: 0;
 }
 .testimonial-section {
   background: #222220 url("../images/text-bg.jpg") no-repeat scroll right 0 / cover;
@@ -769,6 +798,74 @@ header .logo img {
 .footer-block .social-icons a {
   margin-right: 8px;
 }
+.mobi-menu-header {
+  padding: 4px 15px 12px;
+}
+.mobi-menu-header .nav-toggle {
+  float: left;
+  margin-left: 0;
+}
+.mobi-menu-header img {
+  float: right;
+  margin-top: 10px;
+  width: 220px;
+}
+.mobi-menu-list {
+  margin-top: 10px;
+}
+.mobi-menu-list li {
+  text-align: right;
+}
+.mobi-menu-list li.active a {
+  background: #b5a583 none repeat scroll 0 0;
+  border-color: #a59573;
+  color: #fff;
+}
+.mobi-menu-list li a {
+  border-bottom: 1px solid #ededed;
+  color: #0c3964;
+  display: inline-block;
+  font-size: 25px;
+  padding: 8px 19px;
+  width: 100%;
+}
+.mobi-menu-list li ul {
+  display: none;
+  background: #b5a583 none repeat scroll 0 0;
+}
+.mobi-menu-list li ul li a {
+  border: medium none;
+  color: #fff;
+}
+.header-contact-mobi {
+  padding: 10px 15px;
+}
+.header-contact-mobi i {
+  border-radius: 40px;
+  font-size: 26px;
+  height: 50px;
+  width: 50px;
+  margin-top: 12px;
+}
+.header-contact-mobi span {
+  color: #0e3964;
+  font-size: 37px;
+}
+.header-contact-mobi p {
+  font-size: 16px;
+}
+.social-icons-header {
+  bottom: 10px;
+  margin-top: 10px;
+  padding: 4px 15px;
+  text-align: right;
+}
+.social-icons-header a {
+  margin-right: 8px;
+}
+.social-icons-header img {
+  width: 36px;
+}
 @media only screen and (min-width: 0px) and (max-width: 1080px) {
   .navbar {
     display: none;
@@ -921,15 +1018,21 @@ header .logo img {
   header .logo img {
     width: 180px;
   }
-  .header-contact i {
+  .header-contact i,
+  .header-contact-mobi i {
     font-size: 19px;
     height: 38px;
     width: 37px;
   }
-  .header-contact span {
+  .header-contact-mobi i {
+    margin-top: 4px;
+  }
+  .header-contact span,
+  .header-contact-mobi span {
     font-size: 21px;
   }
-  .header-contact p {
+  .header-contact p,
+  .header-contact-mobi p {
     font-size: 12px;
     padding-right: 0;
   }
@@ -959,6 +1062,20 @@ header .logo img {
     float: none;
     margin-top: 16px;
   }
+  .mobi-menu-list li a {
+    font-size: 20px;
+  }
+  .mobi-menu-header img {
+    width: 180px;
+  }
+  .nav-mobile {
+    right: -310px;
+    width: 300px;
+    overflow: auto;
+  }
+  .nav-open {
+    right: 0;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   header {
@@ -967,7 +1084,8 @@ header .logo img {
   header .logo img {
     width: 150px;
   }
-  .header-contact {
+  .header-contact,
+  .header-contact-mobi {
     display: none;
   }
   .slide-area {
